@@ -81,37 +81,46 @@
 
 ### Tehtävä 1: Tee kysely, joka tulostaa kaikki sarakkeet goal-talusta.
 SELECT * FROM goal;
+
 ![image](https://github.com/user-attachments/assets/f1a537a3-3f2f-46aa-9a1f-3fd58c22572c)
 
 ### Tehtävä 2: Tee kysely, joka tulostaa nimen ja tyypin kaikista Suomessa sijaitsevista lentokentistä. Suomen maatunnus on: FI
 SELECT name airport_type FROM airport WHERE iso_country = "FI";
+
 ![image](https://github.com/user-attachments/assets/0beca3c3-b552-4ea7-8e3f-67a7ac6ddba8)
 
 ### Tehtävä 3: Tee kysely, joka tulostaa suomalaisten lentokenttien nimet aakkosjärjestyksessä. Suomen maatunnus: FI
 SELECT name FROM airport WHERE iso_country = "FI" order by name;
+
 ![image](https://github.com/user-attachments/assets/e74dc12e-d666-4c0e-bcae-450fe3a95d29)
 
 ### Tehtävä 4: Tee kysely, joka tulostaa nimen ja tyypin kaikista Suomessa sijaitsevista lentokentistä. Järjestä tulos ensisijaisesti tyypin mukaan ja toissijaisesti nimen mukaan.
 SELECT name, type FROM airport WHERE iso_country = "FI" order by type, name;
+
 ![image](https://github.com/user-attachments/assets/00abecff-108a-4929-829e-47eb3025a9f9)
 
 ### Tehtävä 5: Tee kysely, joka tulostaa kaikki F-kirjaimella alkavat maan nimet country-taulusta.
 SELECT name FROM country WHERE name like "F%";
+
 ![image](https://github.com/user-attachments/assets/b04063de-54a4-4b78-97ba-3e7f37649587)
 
 ### Tehtävä 6: Tee kysely, joka tulostaa kaikki country-taulun maiden nimet, joissa esiintyy F-kirjain.
 SELECT name FROM country WHERE name like "%F%";
+
 ![image](https://github.com/user-attachments/assets/3bbad19a-dea2-4b01-8ccb-07deced0e8e6)
 
 ### Tehtävä 7: Missä locationissa Vesa sijaitsee?
 SELECT location FROM game WHERE screen_name = "Vesa";
+
 ![image](https://github.com/user-attachments/assets/d7b42305-7959-43a1-85ce-6ab21f39a156)
 
 ### Tehtävä 8: Kuinka paljon Ilkka on kuluttanut CO2 budjettia?
 SELECT co2_consumed FROM game WHERE screen_name = "Ilkka";
+
 ![image](https://github.com/user-attachments/assets/65e6239a-f156-4af1-ac04-6db806a494fc)
 
 ### Tehtävä 9: Kuinka paljon alkuperäinen CO2 budjetti on (tulosta CO2 budjetin arvo vain kerran)?
 SELECT distinct co2_budget FROM game;
+
 ![image](https://github.com/user-attachments/assets/ca1f038a-8a56-4e74-9808-72c90333d6b0)
 
