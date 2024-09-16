@@ -79,6 +79,8 @@
 
 # Viikko 2: Yhteen tauluun kohdistuvat osiot ja where-osan liitosehto
 
+## Yhteen tauluun kohdistuvien kyselyiden harjoitukset
+
 ### Tehtävä 1: Tee kysely, joka tulostaa kaikki sarakkeet goal-talusta.
 SELECT * FROM goal;
 
@@ -124,3 +126,4 @@ SELECT distinct co2_budget FROM game;
 
 ![image](https://github.com/user-attachments/assets/ca1f038a-8a56-4e74-9808-72c90333d6b0)
 
+## Where-osan liitosehto harjoitukset
