@@ -1,82 +1,3 @@
-# Viikko 1: Intro, työtavat (sisältää ohjelmistoasennukset), relaatiotietokannan peruskäsitteet, tietokantaskriptin ajaminen ja lentopelin relaatiomalli
-
-### Tehtävä 1: Kuinka monta taulua alla olevan relaatiomallin mukaisessa tietokannassa on?
-![image](https://github.com/user-attachments/assets/ee11ba9d-1e05-4d16-a97c-76e774177c40)
-
-### Tehtävä 2: Katso alla olevaa relaatio-mallia. Kuinka monta saraketta taulussa country on?
-![image](https://github.com/user-attachments/assets/2256165e-0e05-4a4e-bee5-b59331141af8)
-
-### Tehtävä 3: Katso alla olevaa relaatio-mallia. Mikä on taulun airport pääavainkentän nimi?
-![image](https://github.com/user-attachments/assets/c9333e44-a186-4d93-9083-c8645d615d0a)
-
-### Tehtävä 4: Avaa Moodlesta (Viikko 1 kohdalla) löytyvä airports.csv-tiedosto Notepad++:lla (älä avaa Excelillä, Excel saattaa tehdä muutoksia, jotka haittaavat seuraavissa työvaiheissa). Mikä tietotyyppi sopisi airport-taulun pääavainkenttään?
-![image](https://github.com/user-attachments/assets/f0a68fe9-4d50-4b23-97cb-8ea232b50abf)
-
-### Tehtävä 5: Katso alla olevaa relaatio-mallia. Minkä niminen vierasavainkenttä airport-taulussa on? 
-![image](https://github.com/user-attachments/assets/9f28e60a-a363-42c6-889a-494c17dfabcb)
-
-### Tehtävä 6: Katso alla olevaa relaatiomallia. Minkä nimiseen tauluun airport-taulun vierasavainkenttä osoittaa?
-![image](https://github.com/user-attachments/assets/d03c21cb-9cd5-49cb-ad76-0276bb1b9787)
-
-### Tehtävä 7: Katso alla olevaa relaatiomallia. Minkä nimiseen kenttään airport-taulun vierasavainkenttä osoittaa?
-![image](https://github.com/user-attachments/assets/221aa135-b50d-4049-b71e-dede94fb897f)
-
-### Tehtävä 8: Kurkista taas airports.csv-tiedostoon. Mikä tietotyyppi sopisi airport-taulun vierasavainkenttään?
-![image](https://github.com/user-attachments/assets/c92c9c7b-9b91-472b-96f0-fbf32cfe0cbc)
-
-### Tehtävä 9: Airport-tauluun tullaan myöhemmin importoimaan data airports.csv-tiedostosta. Kurkista taas airports.csv-tiedostoon. Kuinka monta tietuetta eli riviä dataa meillä tulee olemaan airport-taulussa?
-![image](https://github.com/user-attachments/assets/54fdf7e4-42fe-4a05-a752-268c2506e796)
-
-### Tehtävä 10: Katso alla olevaa relaatiomallia. Mikä on taulun country pääavain kentän nimi?
-![image](https://github.com/user-attachments/assets/d3bd68d9-a477-4a3d-bd28-371876220fbc)
-
-### Tehtävä 11: Tehtävissä 6 ja 7 kerroit, että airport-taulun vierasavain osoittaa country-taulun pääavaimeen. Tehtävässä 8 päättelit csv-tiedoston perusteella airport-taulun vierasavainkentän tietotyypin. Edeltävän perusteella tiedät country-taulun pääavainkentän tietotyypin. Mikä se on?
-![image](https://github.com/user-attachments/assets/3a8768b1-28b0-4b58-83db-482f5bcafeef)
-
-### Tehtävä 12: Avaa Moodlesta löytyvä countries.csv-tiedosto Notepad++:lla (älä avaa Excelillä, Excel saattaa tehdä muutoksia, jotka haittaavat seuraavissa työvaiheissa). Kuinka monta tietutetta eli riviä dataa meillä tulee olemaan country-taulussa?
-![image](https://github.com/user-attachments/assets/714d1b0e-5124-4951-8566-dc98852c98fc)
-
-### Tehtävä 13: Katso alla olevaa taulun goal data-sisältö kuvaa ja relaatiomallia. Minkä nimisessä taulussa on kuvaus eri säätiloista?
-![image](https://github.com/user-attachments/assets/9cc143c9-ee82-4afe-893d-2b9c4128c217)
-
-### Tehtävä 14: Katso alla olevaa kuvaa taulun goal data-sisällöstä. Minkä niminen on säätila, jonka kuvauksessa sanotaan, että sää on tasan 0-asetta. 
-![image](https://github.com/user-attachments/assets/dee4ecd0-91df-4abb-932e-d379532fabe5)
-
-### Tehtävä 15: Katso alla olevaa relaatiomallia. Minkä niminen on goal-taulun pääavainkenttä?
-![image](https://github.com/user-attachments/assets/36e687a0-2b03-4fef-a466-11d9fd10bcb3)
-
-### Tehtävä 16: Katso alla olevaa relaatio-mallia. Onko goal-taulussa vierasavainta?
-![image](https://github.com/user-attachments/assets/c0476482-c397-41d1-b4d5-603f9559f408)
-
-### Tehtävä 17: Katso alla olevaa relaatio-mallia. Minkä nimisessä taulussa pidetään yllä pelaajan nimimerkkiä?
-![image](https://github.com/user-attachments/assets/963945fe-440f-496a-9493-101514e9be03)
-
-### Tehtävä 18: Katso alla olevaa relaatiomallia. Minkä nimisessä taulussa ylläpidetään kokonaisbudjettia CO2-päästöille?
-![image](https://github.com/user-attachments/assets/fb322d0c-f720-49ef-bdb3-8547221843e4)
-
-### Tehtävä 19: Katso allaolevaa relaatio-mallia. Minkä nimisessä taulussa ylläpidetään pelaajan kuluttamaa CO2 päästöä?
-![image](https://github.com/user-attachments/assets/effad7ac-b956-40cc-b1c7-3dd26db8b4f6)
-
-### Tehtävä 20: Katso alla olevaa relaatiomallia. Minkä nimisessä taulussa ylläpidetään tietoa siitä missä pelaaja sijaitsee?
-![image](https://github.com/user-attachments/assets/f1b3c2cc-c3f3-4c78-b6a3-f9fac362142f)
-
-### Tehtävä 21: Katso alla olevaa relaatio-mallia. Minkä niminen on game-taulun pääavain?
-![image](https://github.com/user-attachments/assets/fdca8141-300b-4073-85db-35566e2f3949)
-
-### Tehtävä 22: Katso alla olevaa relaatio-mallia. Minkä niminen on game-taulun vierasavainkenttä?
-![image](https://github.com/user-attachments/assets/a0eb22ec-6401-4c1b-b50a-42ff68c3888c)
-
-### Tehtävä 23: Katso alla olevaa olevaa relaatio-mallia. Minkä nimisessä taulussa ylläpidetään tietoa siitä, mitkä tavoitelluista säätiloista ovat missäkin peli-sessiossa tavoitettu?
-![image](https://github.com/user-attachments/assets/28d0db15-c46e-4295-ac2a-02661678d659)
-
-### Tehtävä 24: Katso alla olevaa relaatio-mallia. Kaksi eri kenttää yhdessä muodostavat goal_reached-taulun pääavaimen. Mitkä nämä kentät ovat nimeltään?
-![image](https://github.com/user-attachments/assets/dab79b6f-d0d8-4e2d-972f-e158adf7d83f)
-
-### Tehtävä 25: Katso alla olevaa relaatio-mallia. Kuinka monta vierasavainta on goal_reached-taulussa?
-![image](https://github.com/user-attachments/assets/1c994043-1f5c-481d-86ca-fdf07beadc56)
-
-
-
 # Viikko 2: Yhteen tauluun kohdistuvat osiot ja where-osan liitosehto
 
 ## Yhteen tauluun kohdistuvien kyselyiden harjoitukset
@@ -127,3 +48,74 @@ SELECT distinct co2_budget FROM game;
 ![image](https://github.com/user-attachments/assets/ca1f038a-8a56-4e74-9808-72c90333d6b0)
 
 ## Where-osan liitosehto harjoitukset
+
+### Tehtävä 1: Tee kysely, joka listaa maan nimen ja lentokentän nimen. Valitse maaksi Islanti ja anna country-taulun name-kentälle alias "country name" ja airport taulun name-kentälle alias "airport name".
+SELECT country.name AS "country name", airport.name AS "airport name"
+FROM airport, country
+WHERE airport.iso_country = country.iso_country AND country.name = "Iceland";
+
+![image](https://github.com/user-attachments/assets/332f89bf-7d23-4230-9d1b-569791e21653)
+
+### Tehtävä 2: Listaa Ranskan isojen lentokenttien nimet. Anna kentän nimelle alias "airport name".
+SELECT airport.name AS "airport name"
+from airport, country
+WHERE airport.iso_country = country.iso_country AND country.name = "France" AND airport.type = "large_airport";
+
+![image](https://github.com/user-attachments/assets/99615424-28ff-441d-b731-7a260ca50276)
+
+### Tehtävä 3: Tee kysely, joka listaa kaikki Antarktiksella sijaitsevien lentokenttien nimet ja vastaava maan nimi.
+SELECT country.name AS "country name", airport.name AS "airport name"
+FROM airport, country
+WHERE airport.iso_country = country.iso_country AND country.continent = "AN";
+
+![image](https://github.com/user-attachments/assets/46e406d2-5332-4381-8e88-000d1d2601d7)
+
+### Tehtävä 4: Kuinka korkealla Heini on paraikaa merenpinnasta mitattuna?
+SELECT elevation_ft
+FROM airport, game
+WHERE location = ident AND screen_name = "Heini";
+
+![image](https://github.com/user-attachments/assets/3a2eac05-d66b-45a5-8a9d-fd56cbd80d0a)
+
+### Tehtävä 5: Kuinka korkealla Heini on paraikaa merenpinnasta mitattuna? Anna tulos metreissä, ja anna tulokselle alias elevation_m. Yksi jalka on 0,3048 metriä. Älä käytä muutuujaa. Voit kuitenkin tehdä laskutoimituksen ilman muuttujaa
+SELECT elecation_ft * 0.3048 AS elevation_m
+FROM airport, game
+WHERE location = ident AND screen_name = "Heini";
+
+![image](https://github.com/user-attachments/assets/f2cee4ba-2358-47ba-9188-61b64845122f)
+
+### Tehtävä 6: Minkä nimisellä lentokentällä Ilkka on?
+SELECT name
+FROM airport, game
+WHERE location = ident AND screen_name = "Ilkka";
+
+![image](https://github.com/user-attachments/assets/f8dd19b4-18d2-497e-a094-ce1fff92ce46)
+
+### Tehtävä 7: Minkä nimisessä maassa Ilkka on?
+SELECT country.name
+FROM airport, game, country
+WHERE location = ident AND airport.iso_country = country.iso_country AND screen_name = "Ilkka";
+
+![image](https://github.com/user-attachments/assets/58f81465-1388-46b3-82c6-75af781ccb4c)
+
+### Tehtävä 8: Minkä nimiset säätila-tavoitteet Heini on saavuttanut?
+SELECT name
+FROM goal, goal_reached, game
+WHERE game.id = game_id and goal.id = goal_id and screen_name = "Heini";
+
+![image](https://github.com/user-attachments/assets/42723367-f2cf-4b0e-b394-f3fae2e7c8cd)
+
+### Tehtävä 9: Minkä nimisellä lentokentällä Ilkka saavutti säätilan clouds?
+SELECT airport.name
+FROM airport, game, goal, goal_reached
+WHERE location = ident AND game.id = game_id AND goal.id = goal_id and screen_name = "Ilkka" and goal.name = "CLOUDS"; 
+
+![image](https://github.com/user-attachments/assets/c33b8418-7e09-4057-9964-d5b0a177355f)
+
+### Tehtävä 10: Minkä nimisessä maassa Ilkka saavutti säätilan clouds?
+SELECT country.name
+FROM country, airport, game, goal, goal_reached
+WHERE airport.iso_country = country.iso_country AND location = ident AND game.id = game_id AND goal.id = goal_id AND screen_name = "Ilkka" AND goal.name = "CLOUDS";
+
+![image](https://github.com/user-attachments/assets/bb3f195f-dc16-491e-b7ea-f4a898902f45)
+
