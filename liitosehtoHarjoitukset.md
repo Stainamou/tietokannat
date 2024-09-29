@@ -119,3 +119,70 @@ WHERE airport.iso_country = country.iso_country AND location = ident AND game.id
 
 ![image](https://github.com/user-attachments/assets/bb3f195f-dc16-491e-b7ea-f4a898902f45)
 
+# Viikko 3
+
+## Join harjoitukset
+
+### Tehtävä 1: Luettele suomalaiset lentokentät, joilla on aikataulutettuja palveluja. Lopputulokseen halutaan sekä maan nimi että lentokentän nimi.
+SELECT country.name AS "country name", airport.name AS "airport name"
+FROM country INNER JOIN airport ON airport.iso_country = country.iso_country
+WHERE country.name = "Finland" AND scheduled_service = "yes";
+
+![image](https://github.com/user-attachments/assets/4fbc6e5b-3cee-4f68-9174-123cade29e34)
+
+### Tehtävä 2: Luettele pelaajanimet ja niiden lentokentrien nimet, joilla he ovat nyt.
+SELECT screen_name, airport.name
+FROM game INNER JOIN airport ON location = ident;
+
+![image](https://github.com/user-attachments/assets/0e8dc84f-7694-4d43-8899-0ca7885f4f9d)
+
+### Tehtävä 3: Luettele pelaajanimet ja maat, joissa he ovat nyt.
+SELECT screen_name, country.name
+FROM game INNER JOIN airport ON location = ident INNER JOIN country ON airport.iso_country = country.iso_country;
+
+![image](https://github.com/user-attachments/assets/6630a545-c8e0-4ee7-a338-b176e24bbd78)
+
+### Tehtävä 4: Luettele kaikkien niiden lentokenttien nimet, jotka sisältävät merkkijonon "Hels" ja pelaajan nimi, jos joku pelaaja sattuu ko. kentällä olemaan.
+SELECT airport.name, screen_name
+FROM airport LEFT JOIN game ON ident = location WHERE name like "%Hels%";
+
+![image](https://github.com/user-attachments/assets/ae3963bd-dc79-4649-a66a-aad45da7c6be)
+
+### Tehtävä 5: Luettele kaikki säätilatavoitteiden nimet ja pelaajan nimi, jos pelaaja on sen saavuttanut
+SELECT name, screen_name
+FROM goal LEFT JOIN goal_reached ON goal.id = goal_id LEFT JOIN game ON game.id = game_id; 
+
+![image](https://github.com/user-attachments/assets/a928e7df-2d50-49f0-a9b8-84918337f014)
+
+## Sisäkysely harjoitukset
+
+### Tehtävä 1: Minkä nimisessä maassa sijaitsee sanalla ”Satsuma” alkava lentokenttä?
+SELECT name FROM country
+WHERE iso_country in (SELECT iso_country FROM airport WHERE name like "Satsuma%";
+
+![image](https://github.com/user-attachments/assets/442ea898-2729-4328-a691-d8d0f0b86a31)
+
+### Tehtävä 2: Luettele Monacossa sijaitsevien lentokenttien nimet.
+SELECT name FROM airport
+WHERE iso_country in (SELECT iso_country FROM country WHERE name like "Monaco");
+
+![image](https://github.com/user-attachments/assets/0cd54054-bfd5-4ea7-a04e-428b76cdf07a)
+
+### Tehtävä 3:  Luettele nimimerkit, jotka ovat saavuttaneet säätilatavoitteen pilvistä (CLOUDS).
+SELECT screen_name FROM game
+WHERE id in (SELECT game_id FROM goal_reached WHERE goal_id in (SELECT id FROM goal WHERE name = "CLOUDS"));
+
+![image](https://github.com/user-attachments/assets/be78da10-2c00-41c1-acb2-a8b43a6cb60c)
+
+### Tehtävä 4: Luettele kaikki maat, joissa ei ole lentokenttää.
+SELECT country.name FROM country
+WHERE iso_country NOT IN (SELECT airport.iso_country FROM airport);
+
+![image](https://github.com/user-attachments/assets/d85b3fec-42b6-4e2f-9e59-c062a9e74e07)
+
+### Tehtävä 5: Minkä nimiset säätilatavoitteet Heiniltä on saavuttamatta?
+SELECT name FROM goal
+WHERE id NOT IN (SELECT goal.id FROM goal, goal_reached, game WHERE goal.id = goal_id AND game.id = game_id AND screen_name = "Heini");
+
+![image](https://github.com/user-attachments/assets/2179590b-54b7-453e-951e-50bdf9e6e1b7)
+
